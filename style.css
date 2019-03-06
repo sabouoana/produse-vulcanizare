@@ -1,14 +1,10 @@
 body {
     margin:0; 
     padding:0;
-    background-size: auto;
     background-color:rgb(204, 195, 195);
     position:relative;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
-@media (min-width: 1200px)
-{
-
 .container-fluid {
     height:70px;
     padding:0;
@@ -43,7 +39,7 @@ body {
     width:60%;
     float:left;
 }
-.tab {
+.butt {
     height:100%;
     width:20%;
     float:left;
@@ -55,12 +51,12 @@ body {
     font-weight:bold;
     text-decoration:none;
 }
-a {
+.link {
     display: inline-block;
     text-decoration: none;
     
   }
-.tab:hover {
+.butt:hover {
     height:100%;
     width:20%;
     float:left;
@@ -110,17 +106,17 @@ a {
     font-size: 20px;
 }
 
-.tab > a {
+.butt > .link {
     position: relative;
     color:rgb(0, 0, 70);
     text-decoration: none;
   }
   
-  .tab > a:hover {
+  .butt > .link:hover {
     color: rgb(0, 0, 70);
   }
 
-  .tab > a:before {
+  .butt > .link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -135,11 +131,13 @@ a {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  .tab > a:hover:before {
+  .butt > .link:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+@media (min-width: 1200px)
+{
 .mySlides {
     display:none;
     height:580px;
@@ -258,145 +256,8 @@ p.cauta {
 
 @media (max-width: 1200px)and (min-width: 1000px)
 {
-body {
-    margin:0; 
-    padding:0;
-    background-size: auto;
-    background-color:rgb(204, 195, 195);
-    position:relative;
-    scroll-behavior: smooth;
-}
-.container-fluid {
-    height:70px;
-    padding:0;
-}
-.container-left {
-    width: 40%;
-    height: 95%;
-    float:left;
-    position:relative;
-    border-bottom: 70px solid rgb(0, 0, 70);
-    border-right: 100px solid transparent;
-}
-.line {
-    width:100%;
-    height:5%;
-    float:left;
-    background-color:rgb(0,0,70);
-}
-.title {
-    height:100%;
-    width:100%;
-    color:white;
-    font-size:2.2vw;
-    text-align:center;
-    font-family: 'Russo One', sans-serif;
-    font-style:italic;
-    bottom:0px;
-    padding-top:13px;
-}
-.container-right {
-    height:100%;
-    width:60%;
-    float:left;
-}
-.tab {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.5vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:none;
-}
-a {
-    display: inline-block;
-    text-decoration: none;
-    
-  }
-.tab:hover {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.6vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:underline;
-}
-#custom-search-input{
-    margin-top:14px;
-    width:35%;
-    height:60%;
-    float:left;
-    padding: 0px;
-    border: solid 2px #E4E4E4;
-    border-radius: 15px;
-    background-color: #fff;
-    
-}
 
-#custom-search-input input{
-    border: 0;
-    box-shadow: none;
-}
 
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: grey;
-    border-radius:0px;
-    padding: 0 0 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 0px #ccc;
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 20px;
-}
-
-.tab > a {
-    position: relative;
-    color:rgb(0, 0, 70);
-    text-decoration: none;
-  }
-  
-  .tab > a:hover {
-    color: rgb(0, 0, 70);
-  }
-
-  .tab > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 70);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .tab > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
 .mySlides {
     display:none;
     height:480px;
@@ -514,145 +375,8 @@ p.cauta {
 
 @media (min-width: 600px) and (max-width:1000px)
 {
-body {
-    margin:0; 
-    padding:0;
-    background-size: auto;
-    background-color:rgb(204, 195, 195);
-    position:relative;
-    scroll-behavior: smooth;
-}
-.container-fluid {
-    height:70px;
-    padding:0;
-}
-.container-left {
-    width: 40%;
-    height: 95%;
-    float:left;
-    position:relative;
-    border-bottom: 70px solid rgb(0, 0, 70);
-    border-right: 100px solid transparent;
-}
-.line {
-    width:100%;
-    height:5%;
-    float:left;
-    background-color:rgb(0,0,70);
-}
-.title {
-    height:100%;
-    width:100%;
-    color:white;
-    font-size:2.2vw;
-    text-align:center;
-    font-family: 'Russo One', sans-serif;
-    font-style:italic;
-    bottom:0px;
-    padding-top:13px;
-}
-.container-right {
-    height:100%;
-    width:60%;
-    float:left;
-}
-.tab {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.5vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:none;
-}
-a {
-    display: inline-block;
-    text-decoration: none;
-    
-  }
-.tab:hover {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.6vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:underline;
-}
-#custom-search-input{
-    margin-top:14px;
-    width:35%;
-    height:60%;
-    float:left;
-    padding: 0px;
-    border: solid 2px #E4E4E4;
-    border-radius: 15px;
-    background-color: #fff;
-    
-}
 
-#custom-search-input input{
-    border: 0;
-    box-shadow: none;
-}
 
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: grey;
-    border-radius:0px;
-    padding: 0 0 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 0px #ccc;
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 20px;
-}
-
-.tab > a {
-    position: relative;
-    color:rgb(0, 0, 70);
-    text-decoration: none;
-  }
-  
-  .tab > a:hover {
-    color: rgb(0, 0, 70);
-  }
-
-  .tab > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 70);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .tab > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
 .mySlides {
     display:none;
     height:380px;
@@ -770,145 +494,6 @@ p.cauta {
 
 @media (max-width: 600px) and (min-width: 450px)
 {
-body {
-    margin:0; 
-    padding:0;
-    background-size: auto;
-    background-color:rgb(204, 195, 195);
-    position:relative;
-    scroll-behavior: smooth;
-}
-.container-fluid {
-    height:70px;
-    padding:0;
-}
-.container-left {
-    width: 40%;
-    height: 95%;
-    float:left;
-    position:relative;
-    border-bottom: 70px solid rgb(0, 0, 70);
-    border-right: 100px solid transparent;
-}
-.line {
-    width:100%;
-    height:5%;
-    float:left;
-    background-color:rgb(0,0,70);
-}
-.title {
-    height:100%;
-    width:100%;
-    color:white;
-    font-size:2.2vw;
-    text-align:center;
-    font-family: 'Russo One', sans-serif;
-    font-style:italic;
-    bottom:0px;
-    padding-top:13px;
-}
-.container-right {
-    height:100%;
-    width:60%;
-    float:left;
-}
-.tab {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.5vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:none;
-}
-a {
-    display: inline-block;
-    text-decoration: none;
-    
-  }
-.tab:hover {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.6vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:underline;
-}
-#custom-search-input{
-    margin-top:14px;
-    width:35%;
-    height:60%;
-    float:left;
-    padding: 0px;
-    border: solid 2px #E4E4E4;
-    border-radius: 15px;
-    background-color: #fff;
-    
-}
-
-#custom-search-input input{
-    border: 0;
-    box-shadow: none;
-}
-
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: grey;
-    border-radius:0px;
-    padding: 0 0 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 0px #ccc;
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 20px;
-}
-
-.tab > a {
-    position: relative;
-    color:rgb(0, 0, 70);
-    text-decoration: none;
-  }
-  
-  .tab > a:hover {
-    color: rgb(0, 0, 70);
-  }
-
-  .tab > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 70);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .tab > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
 .mySlides {
     display:none;
     height:280px;
@@ -1026,145 +611,7 @@ p.cauta {
 
 @media (max-width: 450px)
 {
-body {
-    margin:0; 
-    padding:0;
-    background-size: auto;
-    background-color:rgb(204, 195, 195);
-    position:relative;
-    scroll-behavior: smooth;
-}
-.container-fluid {
-    height:70px;
-    padding:0;
-}
-.container-left {
-    width: 40%;
-    height: 95%;
-    float:left;
-    position:relative;
-    border-bottom: 70px solid rgb(0, 0, 70);
-    border-right: 100px solid transparent;
-}
-.line {
-    width:100%;
-    height:5%;
-    float:left;
-    background-color:rgb(0,0,70);
-}
-.title {
-    height:100%;
-    width:100%;
-    color:white;
-    font-size:2.2vw;
-    text-align:center;
-    font-family: 'Russo One', sans-serif;
-    font-style:italic;
-    bottom:0px;
-    padding-top:13px;
-}
-.container-right {
-    height:100%;
-    width:60%;
-    float:left;
-}
-.tab {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.5vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:none;
-}
-a {
-    display: inline-block;
-    text-decoration: none;
-    
-  }
-.tab:hover {
-    height:100%;
-    width:20%;
-    float:left;
-    background-color:rgb(204, 195, 195);
-    margin:auto;
-    padding:16px;
-    font-size:1.6vw;
-    border: none;
-    font-weight:bold;
-    text-decoration:underline;
-}
-#custom-search-input{
-    margin-top:14px;
-    width:35%;
-    height:60%;
-    float:left;
-    padding: 0px;
-    border: solid 2px #E4E4E4;
-    border-radius: 15px;
-    background-color: #fff;
-    
-}
 
-#custom-search-input input{
-    border: 0;
-    box-shadow: none;
-}
-
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: grey;
-    border-radius:0px;
-    padding: 0 0 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 0px #ccc;
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 20px;
-}
-
-.tab > a {
-    position: relative;
-    color:rgb(0, 0, 70);
-    text-decoration: none;
-  }
-  
-  .tab > a:hover {
-    color: rgb(0, 0, 70);
-  }
-
-  .tab > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 70);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .tab > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
 .mySlides {
     display:none;
     height:220px;
