@@ -154,11 +154,10 @@ a {
 }
 .col-sm-5 {
     margin-right:30px;
-    /* background-color:lightblue; */
 }
 #gmap_canvas {
     height:450px;
-    width:100%;
+    width:550px;
 }
 .contact-style-h {
     text-align:right;
@@ -175,4 +174,3 @@ a {
 }
 .contact-style-p {
     font-size:27px;
-}

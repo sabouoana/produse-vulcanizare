@@ -237,7 +237,7 @@ p.cauta {
 }
 #main{
     background-color:white;
-    height:700px;
+    height:1000px;
     width:80%;
     float:left;
     position:relative;
@@ -357,7 +357,7 @@ p.cauta {
 }
 #main{
     background-color:white;
-    height:700px;
+    height:1000px;
     width:80%;
     float:left;
     position:relative;
@@ -476,7 +476,7 @@ p.cauta {
 }
 #main{
     background-color:white;
-    height:700px;
+    height:1000px;
     width:80%;
     float:left;
     position:relative;
@@ -593,7 +593,7 @@ p.cauta {
 }
 #main{
     background-color:white;
-    height:700px;
+    height:1000px;
     width:80%;
     float:left;
     position:relative;
@@ -712,7 +712,7 @@ p.cauta {
 }
 #main{
     background-color:white;
-    height:700px;
+    height:1000px;
     width:80%;
     float:left;
     position:relative;
@@ -733,6 +733,33 @@ p.cauta {
     margin-top:70px;
     font-family: 'Teko', sans-serif;
 }
+.mt-3{
+    width:90%;
+}
+.main1 {
+    height:2000px;
+    width:100%;
+    background-color: white;
+    margin:auto;
+}
+.box {
+    height:1950px;
+    width:100%;
+    margin:auto;
+   /* background-color:lightblue; */
 
+}
+.card {
+    height:350px;  
+    float:left;
+    margin-right:45px;
+    margin-bottom:30px;
+}
+
+.card-title .price
+{
+    margin:auto;
+    
+}
 
 
